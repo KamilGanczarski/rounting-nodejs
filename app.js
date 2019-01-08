@@ -10,7 +10,7 @@ const errorsHandler = require('./middlewares/errors');
 const app = express();
 
 // Controller to rendering pug to html
-// and set public folder to access from pug file (css or js file)
+// and set public folder from access from pug file to (css or js file)
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');

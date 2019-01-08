@@ -10,11 +10,17 @@ html(lang='en')
             div.col-sm-3
                 a.btn.text-danger(href='/') Navbar
             div.col-sm-9.text-right
-                a.mx-2.btn.bg-transparent.text-light(href='/') home
-                a.mx-2.btn.bg-transparent.text-danger(href='about') about
+                a.mx-2.btn.bg-transparent.text-danger(href='/') home
+                a.mx-2.btn.bg-transparent.text-light(href='about') about
                 a.mx-2.btn.bg-transparent.text-light(href='resources') resources
                 a.mx-2.btn.bg-transparent.text-light(href='login') login
 
-        
+        main.col-sm-12.row.mx-auto
 
-        footer.col-sm-12.py-3.dark.fixed-bottom programming
+            form.col-sm-12.mx-auto.my-5.text-center
+                h3.py-4 Login
+                input.form-control.form-control-sm.col-md-3.col-sm-7.mx-auto.my-2(type="text", name="login")
+                input.form-control.form-control-sm.col-md-3.col-sm-7.mx-auto.my-2(type="password", name="password")
+                button.btn.btn-danger.col-md-3.col-sm-7.mx-auto log in
+                
+        footer.col-sm-12.py-3.dark.navbar.fixed-bottom programming
