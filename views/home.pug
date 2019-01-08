@@ -14,5 +14,11 @@ html(lang='en')
                 a.mx-2.btn.bg-transparent.text-light(href='about') about
                 a.mx-2.btn.bg-transparent.text-light(href='resources') resources
                 a.mx-2.btn.bg-transparent.text-light(href='login') login
+        
+        main.col-12.col-sm-12.row.mx-0.my-0.py-1
+            if (username.length && password.length)
+                = username
+                br
+                = password
 
         footer.col-sm-12.py-3.dark.navbar.fixed-bottom programming
